@@ -4,7 +4,7 @@
     /* background: #192734; */
     padding: 20px;
     border-radius: 10px;
-    width: 500px;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.1);
 
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
@@ -15,11 +15,13 @@
     background-color: transparent;
 }
 
-h2 {
-    font-size: 22px;
-    margin: 0;
-    display: flex;
-    align-items: center;
+h1 {
+    /* font-size: 22px; */
+    color: white;
+    background-color: transparent;
+    /* margin: 0; */
+    /* display: flex; */
+    /* align-items: center; */
 }
 
 .verified {

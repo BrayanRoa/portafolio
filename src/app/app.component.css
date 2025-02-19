@@ -233,7 +233,7 @@
     position: sticky;
     top: 10px;
     /* Espaciado desde la parte superior */
-    padding: 15px;
+    padding: 0 15px;
     height: fit-content;
     /* Evita que ocupe toda la altura */
     display: flex;

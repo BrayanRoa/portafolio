@@ -105,3 +105,47 @@ p {
     background-color: transparent;
     opacity: 1;
 }
+
+.card a {
+    background-color: transparent;
+    display: inline-flex;
+    /* Para alinear el icono con el texto */
+    align-items: center;
+    gap: 8px;
+    /* Espacio entre el icono y el texto */
+    text-decoration: none;
+    /* Elimina el subrayado */
+    color: #1a73e8;
+    /* Azul Google, puedes cambiarlo */
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.card a i {
+    font-size: 18px;
+    /* Tamaño del icono */
+}
+
+
+.card a:active {
+    transform: scale(0.95);
+    /* Efecto de "presionado" */
+}
+
+.hashtags {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.hashtag {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+}

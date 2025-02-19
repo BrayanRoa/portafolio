@@ -15,8 +15,24 @@
 
         <h2>{{ card.title }}</h2>
 
-        <p>{{ card.description }}</p>
+        <p [style.white-space]="'pre-line'">{{ card.description }}</p>
 
+        <!-- HASHTAGS -->
+        <div *ngIf="card.hashtags?.length" class="hashtags">
+            <span *ngFor="let hashtag of card.hashtags" class="hashtag">#{{ hashtag }}</span>
+        </div>
+
+        <!-- LINKS -->
+        <p *ngIf="card.repository">🔗 Repository:
+            <a [href]="card.repository.url" target="_blank">
+                {{ card.repository.label }}
+            </a>
+        </p>
+        <p *ngIf="card.link">🌐 Demo:
+            <a [href]="card.link.url" target="_blank">
+                {{ card.link.label }}
+            </a>
+        </p>
         <img [src]="card.mainImg" alt="Main image" class="main-img">
     </div>
 </div>

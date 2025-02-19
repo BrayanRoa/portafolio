@@ -6,6 +6,7 @@
 }
 
 experience-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +19,7 @@ experience-container {
     padding: 20px;
     border-radius: 12px;
     width: 100%;
-    max-width: 500px;
+    /* max-width: 500px; */
     text-align: left;
     transition: 0.3s ease;
     margin-bottom: 10px;
