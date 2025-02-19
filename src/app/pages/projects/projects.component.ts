@@ -12,9 +12,9 @@ export class ProjectsComponent {
   public projects: ICard[] = [
     {
       name: 'Brayan Roa ✨',
-      date: '20 Jan 2023',
+      date: '20 Jan 2025',
       tag: '🌴Feelin\' fresh',
-      title: 'Wealth Flow 💰📊',
+      title: 'Wealth Flow 💰📊 (Full stack)',
       description: `
         A smart way to track and manage your finances.
 
@@ -58,7 +58,23 @@ export class ProjectsComponent {
         label: 'Visit our backend repository'
       },
       hashtags: ['NodeJS', 'Express', 'Sequelize', 'MySql'],
-      mainImg: 'plane-3093859_1920.jpg'
+      mainImg: 'github.jpg'
+    },
+    {
+      name: 'Brayan Roa 🚀',
+      date: '25 August 2022',
+      tag: '🏫 UFPS',
+      title: 'Backend Developer - Classroom Project Management',
+      description: `
+      Developed a web application for classroom project management at UFPS. Led the analysis and design phase to define the system architecture, database structure, and business logic before proceeding with the development. Implemented the entire backend to optimize administrative processes.  
+      `,
+      repository: {
+        url: 'https://github.com/BrayanRoa/ayd_classroom_projects2.0',
+        label: 'Visit the repository'
+      },
+      hashtags: ['Python', 'Flask', 'Flask-SQLAlchemy', 'Docker', 'PostgreSQL', 'Swagger'],
+      profileImg: 'profile.jpeg',
+      mainImg: 'github.jpg' // Imagen de referencia (ajústala según tu necesidad)
     }
   ]
 

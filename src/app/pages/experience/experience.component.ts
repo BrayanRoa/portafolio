@@ -29,23 +29,13 @@ export class ExperienceComponent {
         • Optimized code and solved critical issues to improve performance and ensure project goals were met.
         `,
       link: {
-        url: 'https://prisma.digital/',
-        label: 'Visit our website'
+        url: 'https://www.linkedin.com/company/prisma-dig/',
+        label: 'Visit the linkedin'
       },
       hashtags: [],
       profileImg: 'profile.jpeg',
       mainImg: 'prisma-digital.png' // Puedes agregar una imagen principal
-    }
-    ,
-    // {
-    //   name: 'Brayan Roa 🚀',
-    //   date: '10 Feb 2024',
-    //   tag: '💡 Exploring new ideas',
-    //   title: 'Angular Rocks!',
-    //   description: `Angular is an amazing framework for building dynamic web applications. 
-    //                   Here are some tips to get started.`,
-    //   profileImg: 'paracaidad.jpg',
-    //   mainImg: 'plane-3093859_1920.jpg'
-    // }
+    },
+
   ]
 }
