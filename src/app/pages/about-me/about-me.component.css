@@ -1,0 +1,47 @@
+.about-me {
+    display: flex;
+    align-items: center;
+    /* background: #192734; */
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.about-content {
+    max-width: 100%;
+    background-color: transparent;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.verified {
+    color: #1da1f2;
+    margin-left: 5px;
+}
+
+h4 {
+    font-size: 16px;
+    color: #8899a6;
+    margin: 5px 0;
+}
+
+p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: white;
+    background-color: transparent;
+}
+
+strong{
+    background-color: transparent;
+}

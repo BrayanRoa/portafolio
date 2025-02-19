@@ -1,0 +1,202 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* SOCIAL MEDIA */
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.social-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* padding: 10px; */
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.social-icon {
+    font-size: 33px;
+    text-decoration: none;
+    color: #0077b5;
+    /* Color de LinkedIn */
+    background-color: transparent;
+}
+
+.social-icon i {
+    background-color: transparent;
+}
+
+.user-social-media {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-social-media span {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.name {
+    font-weight: bold;
+    color: white;
+}
+
+.username {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.follow-button{
+    background-color: transparent;
+}
+
+.follow-button a {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.linkedin-btn a {
+    background-color: #0077b5;
+    /* Azul de LinkedIn */
+}
+
+.instagram-btn a {
+    background-color: #e4405f;
+    /* Rojo de Instagram */
+}
+
+.github-btn a {
+    background-color: #7b7070;
+    /* Negro de GitHub */
+}
+
+.follow-button a:hover {
+    opacity: 0.8;
+}
+
+
+/* TRENDING SKILL */
+.trending-skills {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Más opaco */
+    padding: 16px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.trending-skills h2,
+.social-links h2,
+.skills-container,
+.social-container,
+.skill {
+    background-color: transparent;
+    /* Para que no se acumulen */
+}
+
+
+.trending-skills h2,
+.social-links h2 {
+    /* background-color: rgba(255, 255, 255, 0.05); */
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.skills-container {
+    /* background-color: rgba(255, 255, 255, 0.05); */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill {
+    /* background-color: rgba(255, 255, 255, 0.05); */
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.node {
+    background-color: #cfe8fc;
+    color: #0366d6;
+}
+
+.angular {
+    background-color: #c3e6cb;
+    color: #155724;
+}
+
+.typescript {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.aws {
+    background-color: #e2e3e5;
+    color: #383d41;
+}
+
+.postgres {
+    background-color: #0064a5;
+    color: white;
+}
+
+.mysql {
+    background-color: #00758f;
+    color: white;
+}
+
+.docker {
+    background-color: #0db7ed;
+    color: white;
+}
+
+.git {
+    background-color: #f05032;
+    color: white;
+}
+
+.github {
+    background-color: #333;
+    color: white;
+}
+
+.python {
+    background-color: #3572A5;
+    color: white;
+}
+
+.flask {
+    background-color: #000;
+    color: white;
+}
+
+.prisma {
+    background-color: #0c344b;
+    color: white;
+}
+
+.sqlalchemy {
+    background-color: #d71f00;
+    color: white;
+}

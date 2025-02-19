@@ -1,0 +1,22 @@
+<div *ngFor="let card of cards" class="card">
+    <div class="mini-img-profile">
+        <img [src]="card.profileImg" alt="Profile image" class="img">
+    </div>
+    <div class="main-content-card">
+        <div class="info-post">
+            <span class="name">{{ card.name }}</span>
+            <span class="name">•</span>
+            <span class="date">{{ card.date }}</span>
+        </div>
+
+        <div class="tag">
+            {{ card.tag }}
+        </div>
+
+        <h2>{{ card.title }}</h2>
+
+        <p>{{ card.description }}</p>
+
+        <img [src]="card.mainImg" alt="Main image" class="main-img">
+    </div>
+</div>

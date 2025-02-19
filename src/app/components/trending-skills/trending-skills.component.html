@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="social-links">
+        <h2>Social media</h2>
+        <div *ngFor="let social of socialLinks" class="social-container">
+            <div class="social-icon">
+                <i [class]="social.icon" [ngClass]="social.class"></i>
+            </div>
+            <div class="user-social-media">
+                <span class="name">Brayan Roa</span>
+                <span class="username">{{social.name}}</span>
+            </div>
+            <div class="follow-button" [ngClass]="social.class">
+                <a target="_blank" [href]="social.url">Follow</a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="trending-skills">
+        <h2>Trending Skills</h2>
+        <div class="skills-container">
+            <span class="skill node">#Node.js</span>
+            <span class="skill angular">#Angular</span>
+            <span class="skill typescript">#TypeScript</span>
+            <span class="skill aws">#AWS</span>
+            <span class="skill postgres">#PostgreSQL</span>
+            <span class="skill mysql">#MySQL</span>
+            <span class="skill docker">#Docker</span>
+            <span class="skill git">#Git</span>
+            <span class="skill github">#GitHub</span>
+            <span class="skill python">#Python</span>
+            <span class="skill flask">#Flask</span>
+            <span class="skill prisma">#Prisma ORM</span>
+            <span class="skill sqlalchemy">#SQLAlchemy</span>
+        </div>
+    </div>
+</div>
