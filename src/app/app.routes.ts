@@ -8,8 +8,5 @@ export const routes: Routes = [
     { path: 'about', component: AboutMeComponent },
     { path: 'projects', component: ProjectsComponent },
     { path: 'experience', component: ExperienceComponent },
-    // { path: 'projects', loadChildren: () => import('./projects/projects.module').then(m => m.ProjectsModule) },
-    // { path: 'experience', loadChildren: () => import('./experience/experience.module').then(m => m.ExperienceModule) },
-    // { path: 'about-me', loadChildren: () => import('./about-me/about-me.module').then(m => m.AboutMeModule) },
     { path: '**', redirectTo: 'about', pathMatch: 'full' }
 ];

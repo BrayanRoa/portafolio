@@ -16,7 +16,7 @@ export class AppComponent {
     { label: 'About me', route: '/about' },
     { label: 'Projects', route: '/projects' },
     { label: 'Experience', route: '/experience' },
-    { label: 'Contact', route: '/contact' }
+    // { label: 'Contact', route: '/contact' }
   ];
   selectedItem: string = '';
 
