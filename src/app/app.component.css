@@ -224,7 +224,8 @@
 
 .pages {
     width: 65%;
-    min-height: 200vh;
+    margin-bottom: 30px;
+    /* min-height: 200vh; */
     /* Simula un contenido largo para probar el scroll */
 }
 
