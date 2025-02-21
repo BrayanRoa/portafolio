@@ -1,3 +1,4 @@
+/* Importación de fuente */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 /* Contenedor principal */
@@ -7,8 +8,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* overflow-x: hidden; */
-    /* Evita que el contenido fuerce el scroll */
 }
 
 /* Cover (imagen de fondo) */
@@ -19,9 +18,6 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    /* Evita que la imagen sobresalga */
-    /* border-radius: 10px; */
-    /* Opcional, para esquinas redondeadas */
 }
 
 .cover img {
@@ -58,7 +54,6 @@
     justify-content: center;
     align-items: center;
     background-color: #ccc;
-    /* Color de fondo temporal */
 }
 
 .img-profile .img img {
@@ -66,9 +61,7 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    /* Evita espacios en blanco debajo de la imagen */
 }
-
 
 /* Información del perfil */
 .info {
@@ -94,15 +87,12 @@
     justify-content: center;
     gap: 5px;
     text-decoration: none;
-    /* Espacio entre el icono y el texto */
 }
 
 .follow-button a i {
     font-size: 20px;
     background-color: #cc0088;
-    /* Ajusta el tamaño del icono */
 }
-
 
 /* Sección del encabezado */
 .header {
@@ -117,7 +107,7 @@
 }
 
 .information span {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     color: white;
@@ -125,15 +115,13 @@
 
 .verified-icon {
     color: #1da1f2;
-    /* Color azul de verificación (Twitter-style) */
     font-size: 35px;
     margin-left: 5px;
 }
 
-
 .information .title {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
     color: white;
 }
 
@@ -153,19 +141,13 @@
     font-weight: bold;
 }
 
-/* menu */
+/* Menú de navegación */
 .menu {
     width: 60%;
     margin-top: 30px;
     display: flex;
-    /* Activa Flexbox */
     flex-wrap: wrap;
-    /* Permite que los botones bajen a la siguiente línea si no hay espacio */
     justify-content: center;
-    /* Centra los botones horizontalmente */
-    /* gap: 10px; */
-    /* Espacio entre los botones */
-    /* padding: 10px; */
     margin-bottom: 30px;
 }
 
@@ -177,7 +159,6 @@
     font-size: 16px;
     text-decoration: none;
     border: none;
-    /* border-radius: 5px; */
     background-color: transparent;
     color: gray;
     font-weight: bold;
@@ -188,13 +169,10 @@
 
 .button-item:hover {
     background-color: rgba(128, 128, 128, 0.1);
-    /* Gris claro con 10% de opacidad */
 }
 
 .button-item.active {
     color: white;
-    /* Cambia el color del texto a blanco cuando está activo */
-    transition: background-color 0.9;
 }
 
 .button-item.active::after {
@@ -203,18 +181,12 @@
     bottom: 0;
     left: 50%;
     width: 40%;
-    /* Define el ancho del borde inferior */
     height: 4px;
-    /* Grosor del borde */
     background-color: #cc0088;
-    /* Color del borde */
     transform: translateX(-50%);
-    /* Centrar el borde */
 }
 
-
-/* main */
-
+/* Contenido principal */
 .main {
     width: 60%;
     display: flex;
@@ -225,18 +197,79 @@
 .pages {
     width: 65%;
     margin-bottom: 30px;
-    /* min-height: 200vh; */
-    /* Simula un contenido largo para probar el scroll */
 }
 
 .sticky-data {
     width: 35%;
     position: sticky;
     top: 10px;
-    /* Espaciado desde la parte superior */
     padding: 0 15px;
     height: fit-content;
-    /* Evita que ocupe toda la altura */
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 900px) {
+    .cover {
+        width: 100%;
+        height: 200px;
+    }
+
+    .profile {
+        width: 90%;
+    }
+
+    .header {
+        width: 90%;
+    }
+
+    .menu {
+        width: 90%;
+    }
+
+    .main {
+        width: 90%;
+        /* flex-direction: column; */
+    }
+}
+
+@media (max-width: 700px) {
+
+    .cover {
+        width: 100%;
+        height: 150px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .pages {
+        width: 100%;
+    }
+
+    .sticky-data {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .img-profile .img {
+        width: 150px;
+        height: 150px;
+    }
+
+
+}
+
+
+@media (max-width: 600px) {
+    .cover {
+        width: 100%;
+    }
+
+    .img-profile .img {
+        width: 120px;
+        height: 120px;
+        bottom: 20%;
+    }
 }

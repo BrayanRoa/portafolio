@@ -149,3 +149,10 @@ p {
     border-radius: 15px;
     font-weight: bold;
 }
+
+
+@media (max-width: 900px) {
+    .card{
+        width: 100%;
+    }
+}
