@@ -33,6 +33,14 @@
                 {{ card.link.label }}
             </a>
         </p>
-        <img [src]="card.mainImg" alt="Main image" class="main-img">
+        <img [src]="card.mainImg" alt="Main image" class="main-img" *ngIf="card.mainImg">
+        <div class="video-container" *ngIf="card.video">
+
+            <iframe class="video" [src]="card.video" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+
     </div>
 </div>

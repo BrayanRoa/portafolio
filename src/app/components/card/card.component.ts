@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { SafeResourceUrl } from '@angular/platform-browser';
 
 export interface ICard {
   name: string;
@@ -8,7 +9,8 @@ export interface ICard {
   title: string;
   description: string;
   profileImg: string;
-  mainImg: string; // Puedes agregar una imagen principal
+  mainImg?: string; // Puedes agregar una imagen principal
+  video?: SafeResourceUrl;
   hashtags: string[];
   repository?: {
     url: string;
