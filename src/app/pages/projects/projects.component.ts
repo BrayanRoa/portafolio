@@ -39,7 +39,7 @@ export class ProjectsComponent {
   
           • 🛠 Tech Stack: Node.js (TypeScript), Prisma ORM, PostgreSQL, Angular 17.
           
-          • 👨‍💻 User test: email: guest@gmail.com / password: 123456.
+          • 👨‍💻 User test: email: guest@gmail.com / password: 123456
           `,
         profileImg: 'profile.jpeg',
         link: {
