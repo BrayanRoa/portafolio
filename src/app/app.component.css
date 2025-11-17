@@ -1,275 +1,331 @@
 /* Importación de fuente */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 /* Contenedor principal */
 .container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* Cover (imagen de fondo) */
 .cover {
-    width: 70%;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  width: 70%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .cover img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Sección del perfil */
 .profile {
-    width: 60%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
+  width: 60%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Imagen de perfil */
 .img-profile {
-    position: relative;
-    width: 60%;
-    height: 100%;
+  position: relative;
+  width: 60%;
+  height: 100%;
 }
 
 .img-profile .img {
     position: absolute;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    overflow: hidden;
-    bottom: 10%;
-    border: 3px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ccc;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  bottom: 10%;
+  border: 3px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  cursor: pointer;
 }
 
 .img-profile .img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* Información del perfil */
 .info {
-    width: 60%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
+  width: 60%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 /* Botón de follow */
 .follow-button a {
-    width: 130px;
-    height: 50px;
-    background-color: #cc0088;
-    color: white;
-    font-size: large;
-    font-weight: bold;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    text-decoration: none;
+  width: 130px;
+  height: 50px;
+  background-color: #cc0088;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-decoration: none;
 }
 
 .follow-button a i {
-    font-size: 20px;
-    background-color: #cc0088;
+  font-size: 20px;
+  background-color: #cc0088;
 }
 
 /* Sección del encabezado */
 .header {
-    width: 60%;
-    color: white;
-    display: flex;
-    flex-direction: column;
+  width: 60%;
+  color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .information {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .information span {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
 }
 
 .verified-icon {
-    color: #1da1f2;
-    font-size: 35px;
-    margin-left: 5px;
+  color: #1da1f2;
+  font-size: 35px;
+  margin-left: 5px;
 }
 
 .information .title {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: white;
 }
 
 /* Iconos de información */
 .header .icon-information {
-    display: flex;
-    justify-content: start;
-    gap: 15px;
+  display: flex;
+  justify-content: start;
+  gap: 15px;
 }
 
 .icon {
-    color: #868e96;
+  color: #868e96;
 }
 
 .links {
-    color: #cc0088;
-    font-weight: bold;
+  color: #cc0088;
+  font-weight: bold;
 }
 
 /* Menú de navegación */
 .menu {
-    width: 60%;
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 30px;
+  width: 60%;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .button-item {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    padding: 15px 0;
-    font-size: 16px;
-    text-decoration: none;
-    border: none;
-    background-color: transparent;
-    color: gray;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  color: gray;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
 }
 
 .button-item:hover {
-    background-color: rgba(128, 128, 128, 0.1);
+  background-color: rgba(128, 128, 128, 0.1);
 }
 
 .button-item.active {
-    color: white;
+  color: white;
 }
 
 .button-item.active::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 40%;
-    height: 4px;
-    background-color: #cc0088;
-    transform: translateX(-50%);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 40%;
+  height: 4px;
+  background-color: #cc0088;
+  transform: translateX(-50%);
 }
 
 /* Contenido principal */
 .main {
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .pages {
-    width: 65%;
-    margin-bottom: 30px;
+  width: 65%;
+  margin-bottom: 30px;
 }
 
 .sticky-data {
-    width: 35%;
-    position: sticky;
-    top: 10px;
-    padding: 0 15px;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
+  width: 35%;
+  position: sticky;
+  top: 10px;
+  padding: 0 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 900px) {
-    .cover {
-        width: 100%;
-        height: 200px;
-    }
+  .cover {
+    width: 100%;
+    height: 200px;
+  }
 
-    .profile {
-        width: 90%;
-    }
+  .profile {
+    width: 90%;
+  }
 
-    .header {
-        width: 90%;
-    }
+  .header {
+    width: 90%;
+  }
 
-    .menu {
-        width: 90%;
-    }
+  .menu {
+    width: 90%;
+  }
 
-    .main {
-        width: 90%;
-        /* flex-direction: column; */
-    }
+  .main {
+    width: 90%;
+    /* flex-direction: column; */
+  }
 }
 
 @media (max-width: 700px) {
+  .cover {
+    width: 100%;
+    height: 150px;
+  }
 
-    .cover {
-        width: 100%;
-        height: 150px;
-    }
+  .main {
+    flex-direction: column;
+  }
 
-    .main {
-        flex-direction: column;
-    }
+  .pages {
+    width: 100%;
+  }
 
-    .pages {
-        width: 100%;
-    }
+  .sticky-data {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
-    .sticky-data {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .img-profile .img {
-        width: 150px;
-        height: 150px;
-    }
-
-
+  .img-profile .img {
+    width: 150px;
+    height: 150px;
+  }
 }
 
-
 @media (max-width: 600px) {
-    .cover {
-        width: 100%;
-    }
+  .cover {
+    width: 100%;
+  }
 
-    .img-profile .img {
-        width: 120px;
-        height: 120px;
-        bottom: 20%;
-    }
+  .img-profile .img {
+    width: 120px;
+    height: 120px;
+    bottom: 20%;
+  }
+}
+
+/* agrandar imagen */
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+/* Overlay fullscreen */
+.image-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.25s ease;
+  z-index: 9999;
+}
+
+/* Imagen grande */
+.full-image {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 15px;
+  animation: zoomIn 0.25s ease;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }

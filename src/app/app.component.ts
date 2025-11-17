@@ -12,6 +12,9 @@ import { TrendingSkillsComponent } from './components/trending-skills/trending-s
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+
+  showImage:boolean=false
+
   menuItems = [
     { label: 'About me', route: '/about' },
     { label: 'Projects', route: '/projects' },
@@ -31,5 +34,13 @@ export class AppComponent {
 
   selectItem(item: string) {
     this.selectedItem = item;
+  }
+
+  openImage(){
+    this.showImage = true
+  }
+
+  closeImage(){
+    this.showImage = false
   }
 }

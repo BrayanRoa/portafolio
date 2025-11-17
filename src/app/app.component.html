@@ -1,46 +1,49 @@
 <div class="container">
   <div class="cover">
-    <img src="plane-3093859_1920.jpg" alt="">
+    <img src="plane-3093859_1920.jpg" alt="" />
   </div>
 
   <div class="profile">
     <div class="img-profile">
-      <div class="img">
-        <img src="profile.jpeg" alt="">
+      <div class="img" (click)="openImage()">
+        <img src="profile.jpeg" alt="" />
       </div>
     </div>
 
     <div class="info">
       <div class="follow-button">
-        <a target="_blank" href="https://www.linkedin.com/in/brayan-andres-roa-lopez-45922421b/"><i
-            class="fab fa-linkedin"></i> Follow</a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/brayan-andres-roa-lopez-45922421b/"
+          ><i class="fab fa-linkedin"></i> Follow</a
+        >
       </div>
     </div>
 
+    <!-- Overlay -->
+    @if (showImage) {
+    <div class="image-overlay" (click)="closeImage()">
+      <img src="profile.jpeg" alt="" />
+    </div>
+    }
   </div>
 
   <div class="header">
     <div class="information">
-      <span>Brayan Roa <i class="fas fa-circle-check verified-icon"></i>
-      </span>
+      <span>Brayan Roa <i class="fas fa-circle-check verified-icon"></i> </span>
       <p class="title">🚀 Bringing ideas to life with code! ✨</p>
       <p class="title">
-        Full Stack Developer | Skilled in Node.js, Angular, Python, and Flask. Experience with Docker, Prisma ORM,
-        PostgreSQL, and MySQL. Passionate about building scalable and intuitive applications and leading software
+        Full Stack Developer | Skilled in Node.js, Angular, Python, and Flask.
+        Experience with Docker, Prisma ORM, PostgreSQL, and MySQL. Passionate
+        about building scalable and intuitive applications and leading software
         projects.
       </p>
     </div>
 
     <div class="icon-information">
-      <div class="icon">
-        <i class="fas fa-briefcase"></i> Available
-      </div>
-      <div class="icon links">
-        <i class="fas fa-link"></i> Links
-      </div>
-      <div class="icon">
-        <i class="fas fa-birthday-cake"></i> March 22th
-      </div>
+      <div class="icon"><i class="fas fa-briefcase"></i> Available</div>
+      <div class="icon links"><i class="fas fa-link"></i> Links</div>
+      <div class="icon"><i class="fas fa-birthday-cake"></i> March 22th</div>
       <div class="icon">
         <i class="fas fa-calendar-day"></i> Joined 16 February 2025
       </div>
@@ -49,8 +52,13 @@
 
   <!-- MENU -->
   <div class="menu">
-    <a routerLink="{{item.route}}" class="button-item" *ngFor="let item of menuItems"
-      [class.active]="selectedItem === item.label" (click)="selectItem(item.label)">
+    <a
+      routerLink="{{ item.route }}"
+      class="button-item"
+      *ngFor="let item of menuItems"
+      [class.active]="selectedItem === item.label"
+      (click)="selectItem(item.label)"
+    >
       {{ item.label }}
     </a>
   </div>
